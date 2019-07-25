@@ -8,5 +8,5 @@ setup(
       author_email = "An0nimia@protonmail.com",
       url = "https://github.com/An0nimia/deezloader",
       packages = ["deezloader"],
-      install_requires = ['mutagen', 'requests', 'spotipy', 'tqdm']
+      install_requires = ['mutagen', 'requests', 'spotipy', 'tqdm','pycryptodomex']
 )
