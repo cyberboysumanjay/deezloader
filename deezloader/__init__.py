@@ -162,7 +162,9 @@ class Login:
               open(name, "wb").write(crypt.content)
               decry = open(name, "wb")
               decryptfile(crypt.iter_content(2048), calcbfkey(ids), decry)
+              print(decryptfile)
               datas = add_more_tags(datas, infos, ids)
+              print(datas)
               write_tags(name, datas)
               return name
           def add_more_tags(datas, infos, ids):
