@@ -152,7 +152,9 @@ class Login:
                  md5 = infos['MD5_ORIGIN']
               hashs = genurl(md5, quality, ids, infos['MEDIA_VERSION'])
               try:
-                 crypt = request("https://e-cdns-proxy-%s.dzcdn.net/mobile/1/%s" % (md5[0], hashs))
+                  print("https://e-cdns-proxy-%s.dzcdn.net/mobile/1/%s" % (md5[0], hashs))
+                  crypt = request("https://e-cdns-proxy-%s.dzcdn.net/mobile/1/%s" % (md5[0], hashs))
+                  print(crypt)
               except IndexError:
                  raise TrackNotFound("Track not found :(")
               if len(crypt.content) == 0:
